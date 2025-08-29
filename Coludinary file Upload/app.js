@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 app.use("/api/img",ImgsRoute)
 
 app.get("/",(req,res)=>{
-    res.send("Hello from Db default route")
+    res.send("Hello from Image Upload default route")
 })
 app.get("/form",(req,res)=>{
     const indexPath = path.join(__dirname,"Views","index.html")
