@@ -6,7 +6,7 @@ const defaultRoute = (req,res)=>{
 
 const ImgUpload = async (req,res)=>{
     if(!req.file){
-        return res.status(404).json({error:"Image not Uploaded.."})
+        return res.status(500).json({error:"Image not Uploaded.."})
     }
     const localFilePath =  req.file.path;
     try{
