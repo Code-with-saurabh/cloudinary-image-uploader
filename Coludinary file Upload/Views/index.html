@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Upload</title>
+</head>
+<body>
+  <h2>Upload an Image</h2>
+  
+  <!-- Form submission will hit the complete URL -->
+  <form action="/api/img/imgUpload" method="POST" enctype="multipart/form-data">
+    <!-- File input with name 'file' -->
+    <label for="file">Choose an image:</label>
+    <input type="file" id="file" name="file" accept="image/*" required />
+    
+    <!-- Submit button -->
+    <button type="submit">Upload Image</button>
+  </form>
+</body>
+</html>
